@@ -45,7 +45,7 @@ from cesiumpy.provider import (TerrainProvider,                                 
                                GoogleEarthImageryProvider,                      # noqa
                                GridImageryProvider,                             # noqa
                                MapboxImageryProvider,                           # noqa
-                               OpenStreetMapImageryProvider,                    # noqa
+                               createOpenStreetMapImageryProvider,              # noqa
                                SingleTileImageryProvider,                       # noqa
                                TileCoordinatesImageryProvider,                  # noqa
                                TileMapServiceImageryProvider,                   # noqa

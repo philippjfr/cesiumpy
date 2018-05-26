@@ -416,7 +416,7 @@ class MapboxImageryProvider(ImageryProvider):
         self.format = format
 
 
-class OpenStreetMapImageryProvider(ImageryProvider):
+class createOpenStreetMapImageryProvider(ImageryProvider):
     """
     OpenStreetMapImageryProvider
 
@@ -444,13 +444,15 @@ class OpenStreetMapImageryProvider(ImageryProvider):
     def __init__(self, url=None, fileExtension=None, rectangle=None, ellipsoid=None,
                  minimumLevel=None, maximumLevel=None, credit=None, proxy=None):
 
-        super(OpenStreetMapImageryProvider, self).__init__(url=url,
-                                                           fileExtension=fileExtension,
-                                                           rectangle=rectangle,
-                                                           ellipsoid=ellipsoid,
-                                                           minimumLevel=minimumLevel,
-                                                           maximumLevel=maximumLevel,
-                                                           credit=credit, proxy=proxy)
+        super(createOpenStreetMapImageryProvider, self).__init__(
+            url=url,
+            fileExtension=fileExtension,
+            rectangle=rectangle,
+            ellipsoid=ellipsoid,
+            minimumLevel=minimumLevel,
+            maximumLevel=maximumLevel,
+            credit=credit, proxy=proxy
+        )
 
 
 class SingleTileImageryProvider(ImageryProvider):
